@@ -1,0 +1,61 @@
+.form {
+
+    display: flex;
+  
+
+    padding: 5px 20px;
+  
+  }
+  .send:hover{
+    background-color: #008CBA;
+    color: black;
+  }
+  
+  
+  
+  .input {
+  
+    border: none;
+  
+    border-radius: 50px;
+  
+    padding: 2%;
+  
+    width: 100%;
+  
+    font-size: 1.2em;
+  
+  }
+  
+  
+  
+  input:focus, textarea:focus, select:focus{
+  
+    outline: none;
+  
+  }
+  
+  .emoji {
+    margin: 5px;
+    padding: 10px;
+    
+  }
+  .emoji:hover{
+    background-color: #008CBA;
+    color: black;
+  }
+
+
+.emoji1 {
+  margin: 16px;
+  text-decoration: none;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  border: 2px
+}
+.emoji1:hover {
+  background-color: #008CBA;
+  color: white;
+}
