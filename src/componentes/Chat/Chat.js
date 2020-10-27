@@ -21,7 +21,7 @@ const Chat = ({ location }) => {
 
   const [messages, setMessages] = useState([]);
 
-  const ENDPOINT = 'localhost:5000';
+  const ENDPOINT ='https://chat-app-socketio1.herokuapp.com/'
 
 
 
