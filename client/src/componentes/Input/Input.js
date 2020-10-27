@@ -7,8 +7,8 @@ import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfie
 
 
 
-const Input = ({ setMessage, sendMessage, message }) => {
-const [state, setState] = useState({
+const Input = ({ setMessage, sendMessage, message, messages }) => {
+  const [state, setState] = useState({
   bottom: false,
 })
 
@@ -20,12 +20,11 @@ const toggleDrawer = (slider, open) => (event) => {
 const list = (slider) => (
 
 <>
-
   <div 
   className="emojiContainer"
   onClick={toggleDrawer(slider, false)}
    >
-  <button className='emoji1' onClick={() => setMessage(' UR CUTE')}>OwO</button>
+  <button className='emoji1' onClick={() => setMessage(' OwO')}>OwO</button>
   <button className='emoji1' onClick={() => setMessage(' UwU')}>UwU</button>
   <button className='emoji1' onClick={() => setMessage(' :D')}>:D</button>
   <button className='emoji1' onClick={() => setMessage(' D:')}>D:</button>
@@ -43,7 +42,8 @@ const list = (slider) => (
 return (
 <>
 
-  <form className="form">
+  <form 
+  className="form">
 
     <IconButton 
     className="emoji"
@@ -53,7 +53,7 @@ return (
     </IconButton>
     <input
 
-      className="input"
+      className="input1"
 
       type="text"
 
@@ -68,6 +68,7 @@ return (
       
 
     />
+
   <IconButton
     onClick={e => sendMessage(e)}
     className="send">
