@@ -40,7 +40,7 @@ const TextContainer = ({ users }) => (
 
         )
 
-        : null
+        : <h1> Carregando... </h1>
 
     }
 
